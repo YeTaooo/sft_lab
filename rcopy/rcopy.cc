@@ -29,12 +29,7 @@ int main (const int argc, const char* argv[])
         //cout << "empty File";
         return 0;
     }
-       //cout << n;
-       //cout << "\n";
     m = length%BUFFER_SIZE;
-    //cout << m ;
-    //cout << "\n";
-
     if(n==0){
        file1.seekg(0,ios::beg);
        file1.read(data,length);
@@ -71,8 +66,7 @@ int main (const int argc, const char* argv[])
        file1.seekg(0,ios::beg);
        length = m;
        file1.read(data,length);
-       //cout << data;
-       //cout << "\n";
+       
        for(i=0; i< length/2; i++)
        {
            ch = data[i];
